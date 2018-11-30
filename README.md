@@ -1,2 +1,3 @@
-# datasci
-Data science lab (4)
+Valeria Scherbakova 
+
+Data science lab (programming lab 4)
