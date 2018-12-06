@@ -21,13 +21,13 @@ def replace_indices(dataframe):
 class VisualizerApp(server.App):
     title = "Data Visualizer"
 
-	# Считывание данных про области
+    # Считывание данных про области
     provinces = pd.read_csv("provinces.csv", header=0)
     provinces.sort_values('newProvinceID', inplace=True)
     province_options = [{'label': "(" + str(row['newProvinceID']) + ") " + row['province_name'],
                          'value': row['newProvinceID']} for index, row in provinces.iterrows()]
-						 
-	# Элементы управления на панели слева
+    
+    # Элементы управления на панели слева
     inputs = [{
         "type": 'dropdown',
         "label": 'Series',
@@ -85,10 +85,10 @@ class VisualizerApp(server.App):
         "id": "update_data"
     }]
 
-	# Вкладки
+    # Вкладки
     tabs = ["Plot", "Table"]
 
-	# И информация про их содержимое
+    # И информация про их содержимое
     outputs = [{
         "type": "plot",
         "id": "plot",
@@ -102,7 +102,7 @@ class VisualizerApp(server.App):
         "on_page_load": True
     }]
 
-	# Получение данных для вкладки Data
+    # Получение данных для вкладки Data
     def getData(self, params):
         series = params['series']
         province = int(params['province'])
@@ -121,7 +121,7 @@ class VisualizerApp(server.App):
                                       ['year', 'week', series]]
         return result_frame
 
-	# Получение графика для вкладки Plot
+    # Получение графика для вкладки Plot
     def getPlot(self, params):
         series = params['series']
         province = int(params['province'])
