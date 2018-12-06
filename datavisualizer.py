@@ -2,7 +2,6 @@ from spyre import server
 import pandas as pd
 
 
-# Дикт для замены сгенерирован на основе provinces.csv при помощи скрипта generate_dict_prid.py
 prIdToNewId = {1: 22, 2: 24, 3: 23, 4: 25, 5: 3, 6: 4, 7: 8, 8: 19, 9: 20, 10: 21, 11: 9, 12: 0, 13: 10, 14: 11, 15: 12,
                16: 13, 17: 14, 18: 15, 19: 16, 20: 26, 21: 17, 22: 18, 23: 6, 24: 1, 25: 2, 26: 7, 27: 5}
 
@@ -22,11 +21,13 @@ def replace_indices(dataframe):
 class VisualizerApp(server.App):
     title = "Data Visualizer"
 
+	# Считывание данных про области
     provinces = pd.read_csv("provinces.csv", header=0)
     provinces.sort_values('newProvinceID', inplace=True)
     province_options = [{'label': "(" + str(row['newProvinceID']) + ") " + row['province_name'],
                          'value': row['newProvinceID']} for index, row in provinces.iterrows()]
-
+						 
+	# Элементы управления на панели слева
     inputs = [{
         "type": 'dropdown',
         "label": 'Series',
@@ -84,8 +85,10 @@ class VisualizerApp(server.App):
         "id": "update_data"
     }]
 
+	# Вкладки
     tabs = ["Plot", "Table"]
 
+	# И информация про их содержимое
     outputs = [{
         "type": "plot",
         "id": "plot",
@@ -99,6 +102,7 @@ class VisualizerApp(server.App):
         "on_page_load": True
     }]
 
+	# Получение данных для вкладки Data
     def getData(self, params):
         series = params['series']
         province = int(params['province'])
@@ -117,6 +121,7 @@ class VisualizerApp(server.App):
                                       ['year', 'week', series]]
         return result_frame
 
+	# Получение графика для вкладки Plot
     def getPlot(self, params):
         series = params['series']
         province = int(params['province'])
