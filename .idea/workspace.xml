@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="35231bc6-6ba3-40db-8728-770bf880dde8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="35231bc6-6ba3-40db-8728-770bf880dde8" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,8 +43,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dataprocessor.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+            <state relative-caret-position="187">
+              <caret line="11" selection-start-line="11" selection-end-line="11" />
             </state>
           </provider>
         </entry>
@@ -56,7 +53,7 @@
         <entry file="file://$PROJECT_DIR$/datavisualizer.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="134">
-              <caret line="136" column="74" lean-forward="true" selection-start-line="136" selection-start-column="74" selection-end-line="136" selection-end-column="74" />
+              <caret line="136" column="74" selection-start-line="136" selection-start-column="74" selection-end-line="136" selection-end-column="74" />
               <folding>
                 <element signature="e#0#24#0" expanded="true" />
               </folding>
@@ -262,6 +259,9 @@
       <module name="datasci" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -270,7 +270,7 @@
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/datavisualizer.py" />
       <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
       <option name="REDIRECT_INPUT" value="false" />
@@ -299,6 +299,14 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Python.datasci" />
+      <item itemvalue="Python.dataloader" />
+      <item itemvalue="Python.datamerger" />
+      <item itemvalue="Python.dataprocessor" />
+      <item itemvalue="Python.datavisualizer" />
+      <item itemvalue="Python.generate_dict_prid" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.datavisualizer" />
@@ -324,16 +332,17 @@
       <workItem from="1543562710193" duration="14796000" />
       <workItem from="1543578615524" duration="584000" />
       <workItem from="1544095765015" duration="583000" />
+      <workItem from="1544096537907" duration="48000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19876000" />
+    <option name="totallyTimeSpent" value="19924000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.28139183" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2859304" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -403,6 +412,25 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/provinces.csv">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="16" lean-forward="true" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="csv-text-editor" />
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" rowLines="3" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data_massive.csv">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="138" lean-forward="true" selection-start-line="1" selection-start-column="39" selection-end-line="1" selection-end-column="138" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="csv-text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/dataloader.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -427,36 +455,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/provinces.csv">
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" rowLines="3" />
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="16" lean-forward="true" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="csv-text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data_massive.csv">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="138" lean-forward="true" selection-start-line="1" selection-start-column="39" selection-end-line="1" selection-end-column="138" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="csv-text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/dataprocessor.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        <state relative-caret-position="187">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/datavisualizer.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="134">
-          <caret line="136" column="74" lean-forward="true" selection-start-line="136" selection-start-column="74" selection-end-line="136" selection-end-column="74" />
+          <caret line="136" column="74" selection-start-line="136" selection-start-column="74" selection-end-line="136" selection-end-column="74" />
           <folding>
             <element signature="e#0#24#0" expanded="true" />
           </folding>
